@@ -6,8 +6,18 @@
 
     <h2>Our cars</h2>
 
-    <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis adipisci omnis tempore, quaerat odio veritatis molestias numquam quae explicabo nostrum minus corporis, doloremque labore, eius nobis quas blanditiis aliquid! Quidem?
-    </p>
+    <ul>
+        @foreach ($cars as $car)
+            <li>
+                <h3>Modello: {{ $car->modello() }}</h3>
+            </li>
+            <li>
+                <h3>Marca: {{ $car->marca() }}</h3>
+            </li>
+            <li>
+                <h3>Targa: {{ $car->targa() }}</h3>
+            </li>
+        @endforeach
+    </ul>
 
 @endsection

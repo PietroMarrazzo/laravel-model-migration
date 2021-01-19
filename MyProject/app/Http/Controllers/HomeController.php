@@ -12,9 +12,9 @@ class HomeController extends Controller
         
         // prendere data dal DB
         $cars = Car::all();
-        dd($cars);
+        // dd($cars);
 
 
-        return view('home');
+        return view('home', compact('cars'));
     }
 }
