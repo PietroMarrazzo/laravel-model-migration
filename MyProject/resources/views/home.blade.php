@@ -9,13 +9,13 @@
     <ul>
         @foreach ($cars as $car)
             <li>
-                <h3>Modello: {{ $car->modello() }}</h3>
+                <h3>Modello: {{ $car->modello }}</h3>
             </li>
             <li>
-                <h3>Marca: {{ $car->marca() }}</h3>
+                <h3>Marca: {{ $car->marca }}</h3>
             </li>
             <li>
-                <h3>Targa: {{ $car->targa() }}</h3>
+                <h3>Targa: {{ $car->targa }}</h3>
             </li>
         @endforeach
     </ul>
